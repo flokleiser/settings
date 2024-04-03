@@ -1,4 +1,4 @@
-# My Settings
+# My Settings and stuff
 
 - VScode: [keybindings.json]
 
