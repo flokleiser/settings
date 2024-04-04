@@ -145,10 +145,12 @@
         "command": "-workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
     },
-    // { "key": "[BracketLeft]",           "command": "type", "args": { "text": "[" }, "when": "editorTextFocus" },
-    // { "key": "[BracketRight]",               "command": "type", "args": { "text": "]" }, "when": "editorTextFocus" },
-    // { "key": "Shift+[BracketLeft]",     "command": "type", "args": { "text": "{" }, "when": "editorTextFocus" },
-    // { "key": "Shift+[BracketRight]",         "command": "type", "args": { "text": "}" }, "when": "editorTextFocus" },
-    // { "key": "Alt+[BracketLeft]",       "command": "type", "args": { "text": "ü" }, "when": "editorTextFocus" },
-    // { "key": "Alt+[Quote]",           "command": "type", "args": { "text": "¨" }, "when": "editorTextFocus" },
-] 
+    { "key": "[Semicolon]",           "command": "type", "args": { "text": "[" }, "when": "editorTextFocus" },
+    { "key": "[Quote]",               "command": "type", "args": { "text": "]" }, "when": "editorTextFocus" },
+    { "key": "Shift+[Semicolon]",     "command": "type", "args": { "text": "{" }, "when": "editorTextFocus" },
+    { "key": "Shift+[Quote]",         "command": "type", "args": { "text": "}" }, "when": "editorTextFocus" },
+    { "key": "Alt+[Semicolon]",       "command": "type", "args": { "text": "ö" }, "when": "editorTextFocus" },
+    { "key": "Alt+[Quote]",           "command": "type", "args": { "text": "ä" }, "when": "editorTextFocus" },
+    { "key": "Shift+Alt+[Semicolon]", "command": "type", "args": { "text": "Ö" }, "when": "editorTextFocus" },
+    { "key": "Shift+Alt+[Quote]",     "command": "type", "args": { "text": "Ä" }, "when": "editorTextFocus" }
+]  
