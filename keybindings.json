@@ -152,5 +152,27 @@
     { "key": "Alt+[Semicolon]",       "command": "type", "args": { "text": "ö" }, "when": "editorTextFocus" },
     { "key": "Alt+[Quote]",           "command": "type", "args": { "text": "ä" }, "when": "editorTextFocus" },
     { "key": "Shift+Alt+[Semicolon]", "command": "type", "args": { "text": "Ö" }, "when": "editorTextFocus" },
-    { "key": "Shift+Alt+[Quote]",     "command": "type", "args": { "text": "Ä" }, "when": "editorTextFocus" }
+    {
+        "key": "Shift+Alt+[Quote]",
+        "command": "type",
+        "args": {
+            "text": "Ä"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    }
 ]  
