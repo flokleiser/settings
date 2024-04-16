@@ -1,5 +1,5 @@
 # My Settings and stuff
 
-- VScode: [keybindings.json]
+- VScode: [keybindings.json], [settings.json]
 
 - Wacom Tablet: [Flo.wacomprefs]

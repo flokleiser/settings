@@ -1,0 +1,32 @@
+{
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "window.commandCenter": true,
+  "terminal.integrated.fontSize": 14,
+  "python.terminal.focusAfterLaunch": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorCustomizations": {
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.cursorSurroundingLines": 5,
+  "vim.foldfix": true,
+  "vim.normalModeKeyBindings": [],
+  "explorer.compactFolders": false,
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "editor.fontSize": 15,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.mouseWheelZoom": true,
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "markdown-preview-enhanced.revealjsTheme": "moon.css",
+  "hediet.vscode-drawio.resizeImages": null,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
+  "git.confirmSync": false,
+}
