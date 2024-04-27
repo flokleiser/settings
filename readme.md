@@ -1,9 +1,8 @@
 # Settings and stuff
 
 - VScode Keybindings: [[keybindings.json]] 
-<br>
+[VScode Keybindings](keybindings.json)
+
 - Vscode Settings: [[settings.json]]
-<br>
 - Wacom Tablet: [[Flo.wacomprefs]]
-<br>
 - Rectangle: [[RectangleConfig.json]]
