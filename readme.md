@@ -1,5 +1,9 @@
-# My Settings and stuff
+# Settings and stuff
 
-- VScode: [keybindings.json], [settings.json]
-
-- Wacom Tablet: [Flo.wacomprefs]
+- VScode Keybindings: [[keybindings.json]] 
+<br>
+- Vscode Settings: [[settings.json]]
+<br>
+- Wacom Tablet: [[Flo.wacomprefs]]
+<br>
+- Rectangle: [[RectangleConfig.json]]
