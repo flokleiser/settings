@@ -29,4 +29,5 @@
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
   "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
