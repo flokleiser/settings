@@ -48,7 +48,7 @@
     //     "when": "editorTextFocus"
     // },
     {
-        "key":"cmd+shift+8",
+        "key":"cmd+shift+0",
         "command": "editor.emmet.action.matchTag"
     },
     {
@@ -267,5 +267,15 @@
     {
         "key": "shift+cmd+backspace",
         "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "shift+cmd+9",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+7",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
     }
 ]  
