@@ -48,6 +48,10 @@
     //     "when": "editorTextFocus"
     // },
     {
+        "key":"cmd+shift+0",
+        "command": "editor.emmet.action.matchTag"
+    },
+    {
         "key": "cmd+down",
         "command": "-editor.action.goToBottomHover",
         "when": "editorHoverFocused"
@@ -76,10 +80,6 @@
         "key": "ctrl+n",
         "command": "-selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "shift+cmd+l",
-        "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
         "key": "ctrl+2",
@@ -259,4 +259,23 @@
         "command": "-extension.vim_cmd+c",
         "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
     },
+    {
+        "key": "cmd+backspace",
+        "command": "-workbench.action.terminal.killActiveTab",
+        "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "shift+cmd+backspace",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "shift+cmd+9",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+7",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    }
 ]  
