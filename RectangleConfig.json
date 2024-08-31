@@ -47,7 +47,7 @@
       "int" : 0
     },
     "disabledApps" : {
-
+      "string" : "[]"
     },
     "doubleClickTitleBar" : {
       "int" : 0
@@ -197,10 +197,10 @@
       "int" : 0
     },
     "todo" : {
-      "int" : 0
+      "int" : 1
     },
     "todoApplication" : {
-
+      "string" : "com.knollsoft.Rectangle"
     },
     "todoMode" : {
       "bool" : false
@@ -223,15 +223,11 @@
   },
   "shortcuts" : {
     "bottomLeft" : {
-      "keyCode" : 39,
+      "keyCode" : 41,
       "modifierFlags" : 1179648
     },
     "bottomRight" : {
       "keyCode" : 42,
-      "modifierFlags" : 1179648
-    },
-    "larger" : {
-      "keyCode" : 25,
       "modifierFlags" : 1179648
     },
     "leftHalf" : {
@@ -243,7 +239,11 @@
       "modifierFlags" : 1179648
     },
     "nextDisplay" : {
-      "keyCode" : 18,
+      "keyCode" : 124,
+      "modifierFlags" : 1310720
+    },
+    "previousDisplay" : {
+      "keyCode" : 123,
       "modifierFlags" : 1310720
     },
     "reflowTodo" : {
@@ -254,16 +254,12 @@
       "keyCode" : 19,
       "modifierFlags" : 1179648
     },
-    "smaller" : {
-      "keyCode" : 29,
-      "modifierFlags" : 1179648
-    },
     "toggleTodo" : {
       "keyCode" : 11,
       "modifierFlags" : 786432
     },
     "topLeft" : {
-      "keyCode" : 41,
+      "keyCode" : 39,
       "modifierFlags" : 1179648
     },
     "topRight" : {
