@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "cmd+[IntlBackslash]",
@@ -26,30 +25,6 @@
             "value": 2
         },
         "when": "editorTextFocus"
-    },
-    // {
-    //     "key": "cmd+up",
-    //     "command": "cursorMove",
-    //     "args": {
-    //         "to": "up",
-    //         "by": "line",
-    //         "value": 10
-    //     },
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "cmd+down",
-    //     "command": "cursorMove",
-    //     "args": {
-    //         "to": "down",
-    //         "by": "line",
-    //         "value": 10
-    //     },
-    //     "when": "editorTextFocus"
-    // },
-    {
-        "key":"cmd+shift+0",
-        "command": "editor.emmet.action.matchTag"
     },
     {
         "key": "cmd+down",
@@ -80,6 +55,10 @@
         "key": "ctrl+n",
         "command": "-selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
         "key": "ctrl+2",
@@ -196,18 +175,6 @@
         "when": "terminalFocus && terminalShellType == 'pwsh'"
     },
     {
-        "key": "shift+cmd+left",
-        "command": "workbench.action.moveEditorToPreviousGroup"
-    },
-    {
-        "key": "ctrl+cmd+left",
-        "command": "workbench.action.moveEditorToPreviousGroup"
-    },
-    {
-        "key": "shift+cmd+right",
-        "command": "workbench.action.moveEditorToNextGroup"
-    },
-    {
         "key": "ctrl+cmd+right",
         "command": "-workbench.action.moveEditorToNextGroup"
     },
@@ -260,22 +227,61 @@
         "when": "editorTextFocus && vim.active && vim.overrideCopy && vim.use<D-c> && !inDebugRepl"
     },
     {
-        "key": "cmd+backspace",
-        "command": "-workbench.action.terminal.killActiveTab",
-        "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+        "key": "shift+cmd+backspace",
+        "command": "-search.searchEditor.action.deleteFileResults",
+        "when": "inSearchEditor"
     },
     {
         "key": "shift+cmd+backspace",
         "command": "workbench.action.terminal.kill"
     },
     {
-        "key": "shift+cmd+9",
-        "command": "editor.action.jumpToBracket",
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+right",
+        "command": "-editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+cmd+7",
-        "command": "-editor.action.jumpToBracket",
-        "when": "editorTextFocus"
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-quickInput.acceptInBackground",
+        "when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "shift+cmd+y",
+        "command": "-workbench.debug.action.toggleRepl",
+        "when": "workbench.panel.repl.view.active"
+    },
+    {
+        "key": "shift+cmd+y",
+        "command": "workbench.panel.markers.view.focus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.zoomReset"
+    },
+    {
+        "key": "cmd+numpad0",
+        "command": "-workbench.action.zoomReset"
     }
 ]  
