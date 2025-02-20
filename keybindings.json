@@ -1,9 +1,7 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "cmd+[IntlBackslash]",
         "command": "terminal.focus",
-        "when": "editorFocus",
     },
     {
         "key": "cmd+up",
@@ -27,26 +25,6 @@
         },
         "when": "editorTextFocus"
     },
-    // {
-    //     "key": "cmd+up",
-    //     "command": "cursorMove",
-    //     "args": {
-    //         "to": "up",
-    //         "by": "line",
-    //         "value": 10
-    //     },
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "cmd+down",
-    //     "command": "cursorMove",
-    //     "args": {
-    //         "to": "down",
-    //         "by": "line",
-    //         "value": 10
-    //     },
-    //     "when": "editorTextFocus"
-    // },
     {
         "key": "cmd+down",
         "command": "-editor.action.goToBottomHover",
@@ -137,7 +115,7 @@
         "command": "-workbench.action.focusSecondEditorGroup"
     },
     {
-        "key": "shift+cmd+c",
+        "key": "shift+cmd+t",
         "command": "workbench.action.terminal.new"
     },
     {
@@ -145,21 +123,16 @@
         "command": "-workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
     },
-    { "key": "[Semicolon]",           "command": "type", "args": { "text": "[" }, "when": "editorTextFocus" },
-    { "key": "[Quote]",               "command": "type", "args": { "text": "]" }, "when": "editorTextFocus" },
-    { "key": "Shift+[Semicolon]",     "command": "type", "args": { "text": "{" }, "when": "editorTextFocus" },
-    { "key": "Shift+[Quote]",         "command": "type", "args": { "text": "}" }, "when": "editorTextFocus" },
-    { "key": "Alt+[Semicolon]",       "command": "type", "args": { "text": "ö" }, "when": "editorTextFocus" },
-    { "key": "Alt+[Quote]",           "command": "type", "args": { "text": "ä" }, "when": "editorTextFocus" },
-    { "key": "Shift+Alt+[Semicolon]", "command": "type", "args": { "text": "Ö" }, "when": "editorTextFocus" },
-    {
-        "key": "Shift+Alt+[Quote]",
-        "command": "type",
-        "args": {
-            "text": "Ä"
-        },
-        "when": "editorTextFocus"
-    },
+
+    // { "key": "[Semicolon]",           "command": "type", "args": { "text": "[" }, "when": "editorTextFocus" },
+    // { "key": "[Quote]",               "command": "type", "args": { "text": "]" }, "when": "editorTextFocus" },
+    // { "key": "Shift+[Semicolon]",     "command": "type", "args": { "text": "{" }, "when": "editorTextFocus" },
+    // { "key": "Shift+[Quote]",         "command": "type", "args": { "text": "}" }, "when": "editorTextFocus" },
+    // { "key": "Alt+[Semicolon]",       "command": "type", "args": { "text": "ö" }, "when": "editorTextFocus" },
+    // { "key": "Alt+[Quote]",           "command": "type", "args": { "text": "ä" }, "when": "editorTextFocus" },
+    // { "key": "Shift+Alt+[Semicolon]", "command": "type", "args": { "text": "Ö" }, "when": "editorTextFocus" },
+    // { "key": "Shift+Alt+[Quote]",     "command": "type", "args": { "text": "Ä" }, "when": "editorTextFocus" },
+   
     {
         "key": "shift+cmd+m",
         "command": "-workbench.actions.view.problems",
@@ -225,17 +198,12 @@
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
     },
     {
-        "key": "shift+cmd+space",
+        "key": "shift+cmd+p",
         "command": "workbench.action.showCommands"
     },
     {
         "key": "shift+cmd+p",
         "command": "-workbench.action.showCommands"
-    },
-    {
-        "key": "shift+cmd+p",
-        "command": "editor.action.peekDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
     {
         "key": "alt+f12",
@@ -290,10 +258,6 @@
         "when": "workbench.panel.repl.view.active"
     },
     {
-        "key": "shift+cmd+y",
-        "command": "workbench.panel.markers.view.focus"
-    },
-    {
         "key": "cmd+0",
         "command": "-workbench.action.focusSideBar"
     },
@@ -332,5 +296,65 @@
     {
         "key": "shift+cmd+9",
         "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "ctrl+cmd+j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.panel.chatSidebar"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "workbench.panel.markers.view.focus"
+    },
+    {
+        "key": "cmd+k b",
+        "command": "platformio-ide.build",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-platformio-ide.build",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "cmd+k u",
+        "command": "platformio-ide.upload",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "-platformio-ide.upload",
+        "when": "pioProjectReady && pioProjectTasksReady"
+    },
+    {
+        "key": "cmd+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "cmd+k s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "cmd+k s",
+        "command": "platformio-ide.serialMonitor",
+        "when": "pioProjectReady"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "-platformio-ide.serialMonitor",
+        "when": "pioProjectReady"
     }
 ]  

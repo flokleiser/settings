@@ -1,61 +1,87 @@
 {
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "window.commandCenter": true,
-    "terminal.integrated.fontSize": 14,
-    "python.terminal.focusAfterLaunch": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorCustomizations": {
-    },
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.cursorSurroundingLines": 5,
-    "vim.foldfix": true,
-    "vim.normalModeKeyBindings": [],
-    "explorer.compactFolders": false,
-  
-    "files.associations": {
-      "*.css": "css",
-      "*.tsx": "typescriptreact"
-    },
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
+	"python.defaultInterpreterPath": "/usr/local/bin/python3",
+	"window.commandCenter": true,
+	"python.terminal.focusAfterLaunch": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.colorCustomizations": {},
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.cursorSurroundingLines": 5,
+	"vim.foldfix": true,
+	"vim.normalModeKeyBindings": [],
+	"explorer.compactFolders": false,
+
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		}
+	],
+
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		}
+	],
+
+	"files.associations": {
+		"*.css": "css"
+	},
+	"git.enableSmartCommit": true,
+	"git.autofetch": true,
     "editor.fontSize": 15,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.mouseWheelZoom": true,
-    "html.autoClosingTags": false,
-    "javascript.autoClosingTags": false,
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
-    "markdown-preview-enhanced.revealjsTheme": "moon.css",
-    "hediet.vscode-drawio.resizeImages": null,
-    "markdown-preview-enhanced.previewTheme": "github-dark.css",
-    "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
-    "git.confirmSync": false,
-    "workbench.iconTheme": "seti-minimal-folder",
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": ["J"],
-        "after": ["5", "j"]
-      },
-      {
-        "before": ["K"],
-        "after": ["5", "k"]
-      },
-    ],
-
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-          "before": ["J"],
-          "after": ["5", "j"]
-        },
-        {
-          "before": ["K"],
-          "after": ["5", "k"]
-        },
-      ],
-
-    "emmet.showAbbreviationSuggestions": false,
-    "emmet.showExpandedAbbreviation": "never",
-    "editor.indentSize": "tabSize",
+	"html.autoClosingTags": false,
+	"javascript.autoClosingTags": false,
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+	"markdown-preview-enhanced.revealjsTheme": "moon.css",
+	"hediet.vscode-drawio.resizeImages": null,
+	"markdown-preview-enhanced.previewTheme": "github-dark.css",
+	"markdown-preview-enhanced.codeBlockTheme": "darcula.css",
+	"git.confirmSync": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"workbench.iconTheme": "seti-minimal-folder",
+	"emmet.showAbbreviationSuggestions": false,
+	"emmet.showExpandedAbbreviation": "never",
+	"prettier.tabWidth": 4,
+	"editor.mouseWheelZoom": true,
+	"terminal.integrated.fontSize": 14,
+	"editor.accessibilitySupport": "off",
+	"explorer.confirmDragAndDrop": false,
+	"workbench.startupEditor": "none",
+	"editor.fontFamily": " JetBrains Mono, Menlo,Monaco, 'Courier New', monospace",
+	"editor.letterSpacing": 0.2,
+	"vue.server.hybridMode": false,
+	"markdown-preview-enhanced.enableScriptExecution": true,
+	"wordcounter.side.left": [
+		"word"
+	],
+	"[dockercompose]": {
+		"editor.tabSize": 4
+	},
+	"[yaml]": {
+		"editor.tabSize": 4
+	},
+	"glsl-analyzer.path": "/Users/flo/Library/Application Support/Code/User/globalStorage/nolanderc.glsl-analyzer/glsl_analyzer_install/bin/glsl_analyzer",
+	"cmake.showOptionsMovedNotification": false,
+	"zenMode.centerLayout": false,
+	"codesnap.backgroundColor": "#ffffff",
+	"codesnap.transparentBackground": true,
+	"codesnap.showWindowTitle": true,
+	"codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 15px 15px",
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"git.openRepositoryInParentFolders": "never",
     "editor.detectIndentation": false,
-    "prettier.tabWidth": 4
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
