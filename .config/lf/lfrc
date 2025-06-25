@@ -1,0 +1,36 @@
+#test
+
+set icons true
+set icon_theme ~/.config/lf/icons
+
+cmd open ${{
+	nvim "$f"
+}}
+
+map <enter> open
+map <esc> quit
+
+map a :push %mkdir<space>
+map A :push %touch<space>
+map r push :rename<space>
+map u unselect
+map U clear 
+
+map J push 5j
+map K push 5k
+
+%mkdir -p ~/.trash
+
+cmd delete ${{
+	set -f
+	printf "$fx\n"
+	printf "delete?[y/n]"
+	read ans
+	[ "$ans" = "y" ] && rm -rf $fx
+}}
+
+
+map <backspace2> delete
+map x delete
+
+set hidden true
